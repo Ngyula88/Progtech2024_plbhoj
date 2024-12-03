@@ -84,7 +84,6 @@ public class Connect4 {
     }
 
     private boolean checkWin(char piece) {
-        // Vízszintes ellenőrzés
         for (int r = 0; r < ROWS; r++) {
             for (int c = 0; c < COLS - 3; c++) {
                 if (board[r][c] == piece && board[r][c + 1] == piece && board[r][c + 2] == piece && board[r][c + 3] == piece) {
